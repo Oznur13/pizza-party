@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pizza party</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <body onload="urunleriGetir()">
+    
+        <form action="#" id="pizza">
+            <h3 class="formBaslik">pizza party</h3>
+            <label for="çeşitler" class="aciklama">pizza çeşitleri:</label>
+            <label for="çeşitsucuklupizza">Süt ve süt ürünleri</label>
+            <input type="radio" name="cesitler" id="cesitsucuklupızza" checked>
+            <label for="çeşitkarışıkpizza">Temel gıda ürünleri</label>
+            <input type="radio" name="cesitler" id="cesitkarısıkpızza">
+            <label for="çeşitsebzelipizza">Temizlik ürünleri</label>
+            <input type="radio" name="cesitler" id="cesitsebzelıpızza">
+            <label for="çeşitvejeteryanpizza">Temizlik ürünleri</label>
+            <input type="radio" name="cesitler" id="cesitvejeteryanpızza">
+            <label for="çeşitmantarlıpizza">Temizlik ürünleri</label>
+            <input type="radio" name="cesitler" id="cesitmantarlıpızza">
+           
+    
+            <div id="urunPanel">
+                
+            </div>
+    
+            <label for="adet" class="aciklama">Adet seçimi yapınız:</label>
+            <input type="number" name="adet" id="urunAdet" value="1" min="1">
+            <input type="button" value="Sepete Ekle" id="btnEkle" onclick="sepeteEkle()">
+    
+            <select name="sepet" id="pizzaparty" size="10">
+                <option value="0">Seçtiğiniz ürünler</option>
+            </select>
+    
+            <input type="button" value="Sepetten Çıkar" id="btnCikar" onclick="sepettenCikar()">
+            <input type="button" value="Sepeti Boşalt" id="btnBosalt" onclick="sepetiBosalt()">
+    
+            
+            <label for="indirim" class="aciklama">İndirim kodu:</label>
+            <input type="text" name="indirim" id="txtIndirim">
+            <input type="button" value="Kodu Ekle" id="btnKod" onclick="koduEkle()">
+    
+            <label for="sepetTutar" class="aciklama">Toplam ödenecek tutar:</label>
+            <h4 id="sepetTutar">0 TL</h4>
+            <input type="button" value="Tamamla ve Öde" id="btnTamamla">
+    
+            <h5 id="sonuc"></h5>
+        </form>
+        <script src="script js"></script>
+    </body>
+    </html>
+</body>
+</html>
